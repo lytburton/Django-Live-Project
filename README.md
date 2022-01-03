@@ -1,5 +1,14 @@
 # Django-Live-Project
-Django Live Project Code Summary
+
+## Table of Contents
+
+- [About This Project](https://github.com/lytburton/Django-Live-Project#about-this-project)
+- [Creating The App](https://github.com/lytburton/Django-Live-Project#creating-the-app-)
+- [Creating My Model](https://github.com/lytburton/Django-Live-Project#creating-my-model-)
+- [Displaying All Items From the Database](https://github.com/lytburton/Django-Live-Project#displaying-all-items-from-the-database-)
+- [Details Page](https://github.com/lytburton/Django-Live-Project#details-page-)
+- [Edit and Delete Functions](https://github.com/lytburton/Django-Live-Project#edit-and-delete-functions-)
+
 
 ## About This Project🍂
 I participated in a live project over a two week sprint and built an app called "The Gardening App" developed with an MVT structure, and using the Django Framework. My app was part of a larger project called AppBuilder9000. My team used Azure DevOps for project management and version control, and Discord to communicate asynchronously and to hold Scrum meetings. 
