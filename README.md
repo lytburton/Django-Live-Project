@@ -1,14 +1,23 @@
 # Django-Live-Project
 Django Live Project Code Summary
 
-## About This Project
+## About This Project🍂
 I participated in a live project over a two week sprint and built an app called "The Gardening App" developed with an MVT structure, and using the Django Framework. My app was part of a larger project called AppBuilder9000. My team used Azure DevOps for project management and version control, and Discord to communicate asynchronously and to hold Scrum meetings. 
 
 During the project, I completed multiple user stories which included creating the Gardening app and registering it within the main AppBuilder9000 project, building a model and model forms, establishing multiple views and URL paths, and creating templates to give the app basic CRUD functionality. The app is also enhanced using Bootstrap 4, Crispy Forms, jQuery, and DataTables.
 
 
-## Creating the App
+
+![This is the home page of the AppBuilder9000 project.](https://github.com/lytburton/Django-Live-Project/blob/main/image1.png?raw=true)
+
+
+## Creating the App 🍎
 In the beginning, I created The Gardening App and registered my app within the main project, AppBuilder9000. I then created my base and home templates using Django block tags, added a function to my views to render the home page, and registered my URLs with the main app. Next, I created URL paths for my homepage, linked The Gardening App's homepage to the AppBuilder9000 home page, and added basic styling and navigation to The Gardening App homepage.
+
+
+
+![This is the image link to The Gardening App on the home page of the AppBuilder9000 project.](https://github.com/lytburton/Django-Live-Project/blob/main/image2.png?raw=true)
+
 
 ### Registering My App
 ```
@@ -211,8 +220,17 @@ urlpatterns = [
 </footer>
 ```
 
-## Creating My Model
+
+![This is the home page of The Gardening App.](https://github.com/lytburton/Django-Live-Project/blob/main/image3.png?raw=true)
+
+
+## Creating My Model 🐰
 I created a model to collect and track plants that a user might want to grow/are growing in their own garden. A model form was added to give the user the ability to create a new item. When creating my model, I planned out multiple input categories so the user can track the plants in their garden, and included an objects manager for accessing the database. I then added a template to my app for creating a new item,  and a views function that renders the 'create' page (and utilizes the model form to save the collection item to the database). I applied Crispy Forms functionality to enhance the styling, as well.
+
+
+
+![This is the model form that receives user input to track data about plants.](https://github.com/lytburton/Django-Live-Project/blob/main/image4.png?raw=true)
+
 
 ### Model
 ```
@@ -350,8 +368,13 @@ urlpatterns = [
 ]
 ```
 
-## Displaying All Items From the Database
+## Displaying All Items From the Database 🥕
 Here, I displayed information from the database in a new HTML page linked from The Gardening App home page. I added in a function that gets all the items from the database and sends them to the template. I displayed a list of items from the database, with all of the fields for that item displayed with labels/headers. Scrolling, pagination, and a search bar were added using the DataTables plugin.
+
+
+
+![This is a searchable and scrollable list of all plants in the database.](https://github.com/lytburton/Django-Live-Project/blob/main/image5.png?raw=true)
+
 
 ### Added Function to Views
 ```
@@ -417,8 +440,13 @@ urlpatterns = [
 {% endblock %}
 ```
 
-## Details Page
+## Details Page ☘
 Next, I created a 'details' template page that shows the details of any single item from within the database, as selected by the user. After registering the URL pattern, I created a views function that will find a single item from the database and send it to the template. I added in a link for each item on the 'display all items' page that will direct to the 'details' page for that item, and displayed all the details of the item.
+
+
+
+![This page shows the details of a single plant a user selects from the database.](https://github.com/lytburton/Django-Live-Project/blob/main/image6.png?raw=true)
+
 
 ### Details Template
 ```
@@ -509,8 +537,17 @@ def plant_details(request, pk):
     return render(request, "Gardening/gardening_details.html", context)
 ```
 
-## Edit and Delete Functions
+## Edit and Delete Functions 🍃
 These additions allow for edit and delete functions to be done from the details page. There is also a confirmation that is presented before deleting. I added an edit page to the templates, a URL pattern for this template, and I used model forms and instances to display the content of a single item from the database. I had the views function send the information for the single item and save any changes. Within the details template, I included the option to delete an item with a modal confirmation pop-up to ensure that the user wants to delete.
+
+
+
+![This is the page that allows a user to edit plant information.](https://github.com/lytburton/Django-Live-Project/blob/main/image7.png?raw=true)
+
+
+
+![This is the confirmation a user receives before deleting a plant from the database.](https://github.com/lytburton/Django-Live-Project/blob/main/image8.png?raw=true)
+
 
 ### Edit Template
 ```
